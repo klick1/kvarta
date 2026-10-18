@@ -64,7 +64,7 @@ async def create_lead(
             dup_key, "1", ex=settings.lead_duplicate_ttl, nx=True
         )
     except RedisError:
-        cutoff = datetime.utcnow() - timedelta(
+        cutoff = datetime.now(datetime.UTC)- timedelta(
             seconds=settings.lead_duplicate_ttl
         )
         existing = (
