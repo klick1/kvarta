@@ -33,3 +33,8 @@ data/*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Базы данных SQLite
+*.db
+*.sqlite
+*.sqlite3
