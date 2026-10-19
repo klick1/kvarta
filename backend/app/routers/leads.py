@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Request
 from redis.exceptions import RedisError
@@ -64,7 +64,7 @@ async def create_lead(
             dup_key, "1", ex=settings.lead_duplicate_ttl, nx=True
         )
     except RedisError:
-        cutoff = datetime.now(datetime.UTC)- timedelta(
+        cutoff = datetime.now(UTC) - timedelta(
             seconds=settings.lead_duplicate_ttl
         )
         existing = (
