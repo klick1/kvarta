@@ -8,15 +8,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream:    "#F5EDE0",
-        "cream-2":"#EFE3D2",
-        paper:    "#FBF6EC",
-        sand:     "#EAD9C2",
-        coffee:   "#3B2314",
-        "coffee-2":"#5A3A22",
-        muted:    "#8A7660",
-        terra:    "#C1662F",
-        "terra-2":"#A0501F",
+        cream:    "#FFF4C7", // Цвет фона сайта
+        "cream-2":"#F3E5AB", // форма для лидов 
+        paper:    "#FBF6EC",  // Цвет карточек и форм
+        sand:     "#F3E5AB", // Для границ или второстепенных фонов
+        coffee:   "#54321f", // Основной цвет текста
+        "coffee-2":"#6B4A33", // Вторичный цвет текста (чуть светлее)
+        muted:    "#8A7660", // Цвет подсказок и мелкого текста
+        terra:    "#402514", // Акцентный цвет (кнопки, ссылки)
+        "terra-2":"#453336",
       },
       fontFamily: {
         sans:  ["var(--font-karla)", "system-ui", "sans-serif"],

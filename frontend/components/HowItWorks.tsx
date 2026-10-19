@@ -27,7 +27,7 @@ export default function HowItWorks() {
           className="mb-12 font-serif text-[clamp(32px,4.6vw,60px)] font-medium leading-[1.02] tracking-[-0.03em]"
           style={{ fontVariationSettings: '"opsz" 96, "WONK" 1, "SOFT" 30' }}
         >
-          Три шага —<br />и кофе у вас.
+          Три шага —<br />и кофе у вас
         </h2>
 
         <ol className="grid grid-cols-1 gap-8 sm:grid-cols-3">

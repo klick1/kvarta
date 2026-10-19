@@ -24,13 +24,13 @@ export default function Hero() {
             </em>
             ,
             <br />
-            развозим в пятницу.
+            развозим в пятницу
           </h1>
 
           <p className="mb-8 max-w-[46ch] text-[19px] leading-[1.5] text-coffee-2">
             Мастерская на Короля, 9. Партии по 5 кг, обжариваем раз в неделю —
             поэтому зерно попадает к вам на 1–3 день после обжарки, а не через
-            месяц.
+            месяц
           </p>
 
           <div className="mb-5 flex flex-wrap gap-3">
@@ -50,7 +50,7 @@ export default function Hero() {
 
           <p className="max-w-[42ch] text-sm text-muted">
             Без корзины и онлайн-оплаты. Оставляете номер — перезваниваем в
-            течение дня.
+            течение дня
           </p>
         </div>
 
@@ -64,9 +64,7 @@ export default function Hero() {
             sizes="(max-width: 900px) 340px, 380px"
             className="aspect-[4/5] w-full rounded-md object-cover shadow-[0_28px_50px_-24px_rgba(59,35,20,0.5)]"
           />
-          <figcaption className="absolute -bottom-3.5 left-3.5 -rotate-2 rounded border border-[color:var(--line)] bg-paper px-2.5 py-1.5 text-xs text-coffee-2">
-            партия №214 · четверг
-          </figcaption>
+          
         </figure>
       </div>
     </section>

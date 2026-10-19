@@ -48,10 +48,7 @@ export default function About() {
               месяц, не «свежее по дате на упаковке» — реально свежее,
               ещё дышащее. Это то, что мы на самом деле продаём.
             </p>
-            <p className="my-6 border-l-2 border-terra pl-4 font-serif text-xl italic text-coffee">
-              Аня обжаривает. Дмитрий везёт. Если что-то не так — пишите
-              в форме ниже, читаем сами.
-            </p>
+            
 
             <dl className="mt-8 grid gap-5">
               {FACTS.map(([dt, dd]) => (

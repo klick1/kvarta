@@ -9,7 +9,7 @@ export default function Delivery() {
           className="mb-12 font-serif text-[clamp(32px,4.6vw,60px)] font-medium leading-[1.02] tracking-[-0.03em]"
           style={{ fontVariationSettings: '"opsz" 96, "WONK" 1, "SOFT" 30' }}
         >
-          Как забрать.
+          Как забрать
         </h2>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
@@ -25,7 +25,7 @@ export default function Delivery() {
             </p>
             <p className="text-sm text-muted">
               Если хотите зайти и посмотреть на ростер — лучше в четверг,
-              в день обжарки.
+              в день обжарки
             </p>
           </div>
 
@@ -35,12 +35,12 @@ export default function Delivery() {
             </h3>
             <p className="mb-2 text-lg">Каждую пятницу</p>
             <p className="mb-3.5 text-base leading-[1.7] text-coffee-2">
-              От 50 BYN — бесплатно.
+              От 50 BYN — бесплатно
               <br />
-              Меньше 50 BYN — 5 BYN за курьера.
+              Меньше 50 BYN — 5 BYN за курьера
             </p>
             <p className="text-sm text-muted">
-              Доставляем только то, что обжарили в четверг.
+              Доставляем только то, что обжарили в четверг
             </p>
           </div>
         </div>

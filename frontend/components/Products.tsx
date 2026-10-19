@@ -60,11 +60,11 @@ export default function Products() {
         >
           Что обжариваем
           <br />
-          сейчас.
+          сейчас
         </h2>
         <p className="mb-12 max-w-[56ch] text-lg text-coffee-2">
           Каждую неделю — три позиции на полке плюс дрип-пакеты. Светлая обжарка
-          для фильтра, средняя — под эспрессо.
+          для фильтра, средняя — под эспрессо
         </p>
 
         <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -113,7 +113,7 @@ export default function Products() {
 
         <p className="mt-8 text-sm text-muted">
           Онлайн-оплаты нет — оставляете заявку, менеджер перезванивает и всё
-          оформляет по телефону.
+          оформляет по телефону
         </p>
       </div>
     </section>

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Karla } from "next/font/google";
+import localFont from "next/font/local"; 
+import { Montserrat,  Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  subsets: ["latin", "latin-ext"],
+const fraunces
+ = localFont({
+  src: "./fonts/Rimma_sans_Bold.ttf", // Путь от файла layout.tsx
+  variable: "--font-rimma", // Создаем CSS-переменную
   display: "swap",
-  variable: "--font-fraunces",
-  axes: ["opsz", "SOFT", "WONK"],
 });
 
-const karla = Karla({
+const karla =  Montserrat({
   subsets: ["latin", "latin-ext"],
   display: "swap",
   variable: "--font-karla",

@@ -13,7 +13,7 @@ export default function Footer() {
             Кварта
           </p>
           <p className="mb-1.5 text-sm text-muted">
-            Обжарка кофе. Минск, ул. Короля, 9.
+            Обжарка кофе. Минск, ул. Короля, 9
           </p>
           <p className="text-sm text-muted">Фото — Unsplash.</p>
         </div>

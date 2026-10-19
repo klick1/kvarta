@@ -6,8 +6,8 @@ const NAV = [
   ["#products", "Зерно"],
   ["#subscription", "Подписка"],
   ["#how", "Как это работает"],
-  ["#delivery", "Доставка"],
   ["#about", "О нас"],
+  ["#delivery", "Доставка"],
   ["#contacts", "Контакты"],
 ] as const;
 
