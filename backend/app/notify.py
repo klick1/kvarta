@@ -21,6 +21,14 @@ def format_lead_message(lead: Lead) -> str:
         f"Телефон: {lead.phone}",
         f"Интерес: {INTEREST_LABELS.get(lead.interest, lead.interest)}",
     ]
+    
+    SOURCE_LABELS = {
+        "friend": "Друг/подруга",
+        "instagram": "Instagram",
+        "yandex": "Яндекс",
+        "other": "Другое"
+    }
+
     if lead.comment:
         lines.append(f"Комментарий: {lead.comment}")
 

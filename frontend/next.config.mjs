@@ -1,11 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', 
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com', // <-- Пинтерест
+      },
+      {
+        protocol: 'https',
+        hostname: 'pinimg.com',   // <-- Основной CDN Пинтереста
       },
     ],
   },

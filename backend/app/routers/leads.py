@@ -87,6 +87,7 @@ async def create_lead(
         phone=payload.phone,
         interest=payload.interest,
         comment=payload.comment,
+        source=payload.source,
         utm_source=payload.utm_source,
         utm_medium=payload.utm_medium,
         utm_campaign=payload.utm_campaign,

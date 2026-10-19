@@ -7,7 +7,7 @@
     isValidBYPhone,
   } from "@/lib/phone";
   import { getUtm, readUtmFromUrl, saveUtm } from "@/lib/utm";
-  import type { Challenge, Interest, LeadPayload } from "@/lib/types";
+  import type { Challenge, Interest, LeadPayload, SourceType  } from "@/lib/types";
 
   type Status = "idle" | "sending" | "ok" | "error";
 
@@ -18,6 +18,7 @@
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [interest, setInterest] = useState<Interest>("subscription");
+    const [source, setSource] = useState<SourceType | "">("");
     const [comment, setComment] = useState("");
     const [company, setCompany] = useState(""); // honeypot
 
@@ -59,7 +60,7 @@
       return () => document.removeEventListener("click", handler);
     }, []);
 
-    // ---------- валидация ----------
+   
     const validate = (): boolean => {
       let ok = true;
       setErrName("");
@@ -78,7 +79,7 @@
       return ok;
     };
 
-    // ---------- отправка ----------
+    
     const onSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
       if (status === "sending") return;
@@ -96,6 +97,7 @@
         name: name.trim(),
         phone,
         interest,
+        source: source || null,
         comment: comment.trim() || null,
         company,
         ts: challenge?.ts ?? 0,
@@ -306,6 +308,50 @@
                 ))}
               </div>
             </div>
+
+            <div className="mb-5 flex flex-col gap-2">
+  <label className="text-sm font-semibold text-coffee-2">
+    Откуда узнали о нас?{" "}
+    <small className="font-normal text-muted">— необязательно</small>
+  </label>
+  <div
+    role="radiogroup"
+    aria-label="Откуда узнали"
+    className="flex flex-wrap gap-2"
+  >
+    {(
+      [
+        ["friend", "От друга/подруги"],
+        ["instagram", "Instagram"],
+        ["yandex", "Реклама в Яндексе"],
+        ["other", "Другое"],
+      ] as const
+    ).map(([val, label]) => (
+      <label
+        key={val}
+        className={`relative cursor-pointer select-none rounded-full border px-4 py-2 text-[14px] transition-colors ${
+          source === val
+            ? "border-terra bg-terra/10 text-terra"
+            : "border-[color:var(--line)] bg-paper text-coffee hover:border-coffee-2"
+        }`}
+      >
+        <input
+          type="radio"
+          name="source"
+          value={val}
+          checked={source === val}
+          onChange={() => setSource(val)}
+          className="pointer-events-none absolute opacity-0"
+        />
+        <span>{label}</span>
+      </label>
+    ))}
+  </div>
+</div>
+               
+
+
+
 
             <div className="mb-5 flex flex-col gap-2">
               <label

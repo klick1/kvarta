@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const FACTS: [string, string][] = [
-  ["5 кг", "размер одной партии, не больше"],
+  ["5 кг", "размер одной партии"],
   ["1–3 дня", "от обжарки до вашей двери"],
-  ["2019", "год первой партии"],
+  ["2019", "жарим уже 7 лет"],
 ];
 
 export default function About() {
@@ -23,7 +23,7 @@ export default function About() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-16">
           <figure className="relative m-0">
             <Image
-              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80&auto=format&fit=crop"
+              src="https://i.pinimg.com/736x/da/fc/4f/dafc4fa9f99d81417cc816641e1c5592.jpg"
               alt="Обжарка кофе в мастерской"
               width={800}
               height={1000}
@@ -41,14 +41,15 @@ export default function About() {
               почему кофе с полки в супермаркете не имеет ничего общего
               с тем, что мы варим за баром. Мы обжариваем сами, маленькими
               партиями — 5 кг за раз. Этого хватает примерно на 30–40
-              заказов, и всё уходит за неделю.
+              заказов, и всё уходит за неделю
             </p>
             <p className="mb-4 text-lg text-coffee-2">
               Зерно приходит к вам на 1–3 день после обжарки. Не через
               месяц, не «свежее по дате на упаковке» — реально свежее,
-              ещё дышащее. Это то, что мы на самом деле продаём.
+              ещё дышащее. Это то, что мы на самом деле продаём
             </p>
-            
+            <p className="my-6 border-l-2 border-terra pl-4 font-serif text-xl italic text-coffee">
+            </p>
 
             <dl className="mt-8 grid gap-5">
               {FACTS.map(([dt, dd]) => (

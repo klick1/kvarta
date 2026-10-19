@@ -56,7 +56,7 @@ export default function Hero() {
 
         <figure className="relative m-0 max-w-[340px] rotate-[1.6deg] lg:max-w-none">
           <Image
-            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=900&q=80&auto=format&fit=crop"
+            src="https://i.pinimg.com/736x/02/5d/83/025d833580935529c52609fe77ddde13.jpg"
             alt="Только что обжаренные кофейные зёрна"
             width={760}
             height={950}

@@ -1,9 +1,11 @@
 export type Interest = "subscription" | "order" | "question";
+export type SourceType = "friend" | "instagram" | "yandex" | "other";
 
 export type LeadPayload = {
   name: string;
   phone: string;
   interest: Interest;
+  source?: SourceType | null;
   comment?: string | null;
   company?: string;
 

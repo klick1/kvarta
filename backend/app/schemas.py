@@ -5,13 +5,16 @@ from pydantic import BaseModel, Field, field_validator
 from .validators import normalize_phone
 
 Interest = Literal["subscription", "order", "question"]
+SourceType = Literal["friend", "instagram", "yandex", "other"]
 
 
 class LeadCreate(BaseModel):
     name: str = Field(min_length=2, max_length=100)
     phone: str
     interest: Interest
+    source: SourceType | None = None 
     comment: str | None = Field(default=None, max_length=500)
+    company: str | None = None
 
     # honeypot
     company: str | None = None

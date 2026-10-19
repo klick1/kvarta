@@ -1,8 +1,6 @@
 from datetime import datetime
-
 from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column
-
 from .db import Base
 
 
@@ -14,6 +12,7 @@ class Lead(Base):
     phone: Mapped[str] = mapped_column(String(20), index=True)
     interest: Mapped[str] = mapped_column(String(20))
     comment: Mapped[str | None] = mapped_column(Text, nullable=True)
+    source: Mapped[str | None] = mapped_column(String(50), nullable=True)
 
     utm_source: Mapped[str | None] = mapped_column(String(120), nullable=True)
     utm_medium: Mapped[str | None] = mapped_column(String(120), nullable=True)

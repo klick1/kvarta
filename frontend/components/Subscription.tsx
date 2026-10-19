@@ -53,7 +53,7 @@ export default function Subscription() {
 
           <figure className="m-0 overflow-hidden rounded-md">
             <Image
-              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80&auto=format&fit=crop"
+              src="https://i.pinimg.com/1200x/c1/6b/e2/c16be2d1f588b5f267f63122c036f675.jpg"
               alt="Чашка свежесваренного кофе"
               width={640}
               height={800}

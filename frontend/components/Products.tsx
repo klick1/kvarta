@@ -15,7 +15,7 @@ const PRODUCTS: Product[] = [
     notes: "цветочный · бергамот · светлая обжарка",
     price: 32,
     weight: "250 г",
-    img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80&auto=format&fit=crop",
+    img: "https://i.pinimg.com/1200x/e1/30/e0/e130e0e8b24317708854547a83e1d49c.jpg",
     alt: "Эфиопия Иргачеффе, светлая обжарка",
   },
   {
@@ -23,7 +23,7 @@ const PRODUCTS: Product[] = [
     notes: "карамель · красное яблоко",
     price: 29,
     weight: "250 г",
-    img: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80&auto=format&fit=crop",
+    img: "https://i.pinimg.com/736x/96/79/0f/96790f62b7283e29f02326399d5a01f0.jpg",
     alt: "Колумбия Уила",
   },
   {
@@ -31,7 +31,7 @@ const PRODUCTS: Product[] = [
     notes: "орех · шоколад · под эспрессо",
     price: 26,
     weight: "250 г",
-    img: "https://images.unsplash.com/photo-1521302200778-33500795e128?w=600&q=80&auto=format&fit=crop",
+    img: "https://i.pinimg.com/1200x/a4/93/bd/a493bd753ffd523eae03b17f29ebf2e7.jpg",
     alt: "Бразилия Серрадо",
   },
   {
@@ -39,7 +39,7 @@ const PRODUCTS: Product[] = [
     notes: "10 штук · на работу, в дорогу, в подарок",
     price: 18,
     weight: "10 шт",
-    img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&auto=format&fit=crop",
+    img: "https://i.pinimg.com/736x/3e/fa/bf/3efabf57bd61926e67d3a527b0a4b52c.jpg",
     alt: "Дрип-пакеты ассорти",
   },
 ];
