@@ -25,13 +25,13 @@ async def create_lead(
     bg: BackgroundTasks,
     db: Session = Depends(get_db),
 ):
-    ok, reason = verify_challenge(payload.ts, payload.sig)
-    if not ok:
-        logger.info("challenge failed: %s ip=%s", reason, client_ip(request))
-        raise HTTPException(
-            status_code=400,
-            detail="Обновите страницу и попробуйте ещё раз",
-        )
+   # ok, reason = verify_challenge(payload.ts, payload.sig)
+   # if not ok:
+    #    logger.info("challenge failed: %s ip=%s", reason, client_ip(request))
+    #    raise HTTPException(
+      #      status_code=400,
+     #       detail="Обновите страницу и попробуйте ещё раз",
+     #   )
 
     if payload.company:
         logger.info("honeypot triggered ip=%s", client_ip(request))
